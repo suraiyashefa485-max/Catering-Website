@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-dark p-4">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">
+                <h4>Catering Service</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="faq.html">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--  -->
+    <section class="bg-dark">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="card text-bg-dark">
+                        <img style="opacity: 0.3;"
+                            src="https://www.catering-by-design.com/wp-content/uploads/2023/09/01-inexpensive-catering-menu-ideas.jpg"
+                            class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <center>
+                                <h1 class="card-title mt-5 text-warning">Welcome to Our Catering Service</h1>
+                            </center>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br><br>
+
+
+
+    <!-- faq page -->
+    <div style="max-width:600px;margin:40px auto;font-family:sans-serif;">
+        <h4 style="text-align:center;">FAQ</h4>
+
+        <div>
+            <p onclick="toggle(this)" style="cursor:pointer;background:#eee;padding:10px;">What is this website?</p>
+            <div style="display:none;padding:10px;">This is a simple FAQ page.</div>
+        </div>
+
+        <div>
+            <p onclick="toggle(this)" style="cursor:pointer;background:#eee;padding:10px;">How does it work?</p>
+            <div style="display:none;padding:10px;">Click question to show answer.</div>
+        </div>
+
+        <div>
+            <p onclick="toggle(this)" style="cursor:pointer;background:#eee;padding:10px;">Is it responsive?</p>
+            <div style="display:none;padding:10px;">Yes, it works on all devices.</div>
+        </div>
+
+        <div>
+            <p onclick="toggle(this)" style="cursor:pointer;background:#eee;padding:10px;">Can I order food?</p>
+            <div style="display:none;padding:10px;">Yes, very easily.</div>
+        </div>
+
+        <div>
+            <p onclick="toggle(this)" style="cursor:pointer;background:#eee;padding:10px;">Do I need Bootstrap?</p>
+            <div style="display:none;padding:10px;">No, this uses only JavaScript.</div>
+        </div>
+    </div>
+
+    <script>
+        function toggle(element) {
+            var answer = element.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
